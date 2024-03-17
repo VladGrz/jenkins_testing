@@ -4,10 +4,10 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'Lab_2', url: 'https://github.com/VladGrz/DDICN_Labs.git'
+                git branch: 'vhrozovsky/mypy_testing', url: 'https://github.com/VladGrz/jenkins_testing.git'
             }
         }
-        
+
         stage("Testing code") {
             steps {
                 echo "Running mypy"
