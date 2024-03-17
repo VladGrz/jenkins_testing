@@ -12,7 +12,7 @@ class Person:
 
     def change_age(self, age: int) -> None:
         """Method to change the age of the person
-        
+
         :params age: Age to set
         """
         self.age = age
