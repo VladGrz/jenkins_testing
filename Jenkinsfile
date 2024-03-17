@@ -8,5 +8,10 @@ pipeline {
                 sh "mypy ."
             }
         }
+        stage("Running Pylint") {
+            steps {
+                sh "pylint ."
+            }
+        }
     }
 }
