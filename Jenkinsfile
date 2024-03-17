@@ -12,8 +12,10 @@ pipeline {
             }
         }
         stage("Testing code") {
-            echo "Running mypy"
-            sh "mypy ."
+            steps {
+                echo "Running mypy"
+                sh "mypy ."
+            }
         }
     }
 }
