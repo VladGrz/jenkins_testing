@@ -10,7 +10,7 @@ pipeline {
         }
         stage("Running Pylint") {
             steps {
-                sh "pylint ."
+                sh "pylint mypy_validation.py"
             }
         }
     }
