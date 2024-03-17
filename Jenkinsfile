@@ -5,10 +5,10 @@ pipeline {
         stage("Installation") {
             steps {
                 echo "Installing all required modules"
-                sh "sudo apt-get update"
-                sh "sudo apt install pip"
+                sh "apt-get update"
+                sh "apt install pip"
                 sh "pip install mypy"
-                sh "sudo apt install mypy"
+                sh "apt install mypy"
             }
         }
         stage("Testing code") {
