@@ -2,6 +2,12 @@ pipeline {
     agent any
 
     stages {
+        stage('Checkout Code') {
+            steps {
+                git branch: 'Lab_2', url: 'https://github.com/VladGrz/DDICN_Labs.git'
+            }
+        }
+        
         stage("Testing code") {
             steps {
                 echo "Running mypy"
